@@ -1,7 +1,23 @@
 var canvas = document.getElementById('array');
+var header = document.getElementById('header');
+var footer = document.getElementById('footer');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight - 64;
 var drawing = canvas.getContext('2d');
+var head = header.getContext('2d');
+var foot = footer.getContext('2d');
+header.width = window.innerWidth;
+header.height = 32;
+footer.width = window.innerWidth;
+footer.height = 32;
+
+head.font = "24px Arial";
+head.fillStyle = '#f6d55c';
+head.fillText("Sorting Visualizer", (header.width / 2) - 90, 24);
+foot.font = "14px Arial";
+foot.fillStyle = '#f6d55c';
+foot.fillText("Developed by NILAY GUPTA.", (header.width / 2) - 90, footer.height - 10);
+
 canvas.addEventListener('mousedown', onDown, false);
 var diff = canvas.width / 4;
 var width = 5;
@@ -31,7 +47,7 @@ function DrawArray() {
 function onDown(event) {
      var cx = event.pageX;
      var cy = event.pageY;
-     var x = (ArraySize * 6) + 70;
+     var x = (ArraySize * 6) + 55;
      if (cx > x && cx < (x + 135)) {
           if (cy > 105 && cy < 135)
                Render();
@@ -40,19 +56,19 @@ function onDown(event) {
           if (cy > 105 + 75 && cy < 135 + 75)
                QuickSort();
      }
-     if (cx > x && cx < (x + 100)) {
+     if (cx > x && cx < (x + 105)) {
           if (cy > 105 + 150 && cy < 135 + 150)
                BubbleSort();
      }
-     if (cx > x && cx < (x + 115)) {
+     if (cx > x && cx < (x + 120)) {
           if (cy > 105 + 225 && cy < 135 + 225)
                InsertionSort();
      }
 }
 
 function Buttons() {
-     var x = (ArraySize * 6) + 75;
-     var y = 130;
+     var x = (ArraySize * 6) + 60;
+     var y = 100;
      drawing.font = "30px Arial";
      drawing.fillStyle = '#173f5f';
      drawing.fillText("Generate", x, y);
