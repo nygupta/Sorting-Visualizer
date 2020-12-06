@@ -12,10 +12,10 @@ footer.width = window.innerWidth;
 footer.height = 32;
 
 head.font = "24px Arial";
-head.fillStyle = '#f6d55c';
+head.fillStyle = '#fa8072';
 head.fillText("Sorting Visualizer", (header.width / 2) - 90, 24);
 foot.font = "14px Arial";
-foot.fillStyle = '#f6d55c';
+foot.fillStyle = '#fa8072';
 foot.fillText("Developed by NILAY GUPTA.", (header.width / 2) - 90, footer.height - 10);
 
 canvas.addEventListener('mousedown', onDown, false);
@@ -64,17 +64,23 @@ function onDown(event) {
           if (cy > 105 + 225 && cy < 135 + 225)
                InsertionSort();
      }
+     /*if (cx > x && cx < (x + 75)) {
+          if (cy > 105 + 300 && cy < 135 + 300)
+               MergeSort();
+     }*/
 }
 
 function Buttons() {
      var x = (ArraySize * 6) + 60;
      var y = 100;
      drawing.font = "30px Arial";
-     drawing.fillStyle = '#173f5f';
+     drawing.fillStyle = '#fe4a49';
      drawing.fillText("Generate", x, y);
+     drawing.fillStyle = '#851e3e';
      drawing.fillText("Quick", x, y + 75);
      drawing.fillText("Bubble", x, y + 150);
      drawing.fillText("Insertion", x, y + 225);
+     drawing.fillText("Merge", x, y + 300);
 }
 
 function DrawCanvas() {
