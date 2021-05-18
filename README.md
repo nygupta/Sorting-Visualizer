@@ -12,5 +12,5 @@ A webpage which allows viewer to visualize sorting algorithms running in realtim
 ### Webpage Link :-
 - [nygupta/Sorting-Visualizer@github.io](https://nygupta.github.io/Sorting-Visualizer/)
 
-#### Soome Images and Videos :-
+#### Some Images:-
 ![image](./util/sortingvisualizer.png)
