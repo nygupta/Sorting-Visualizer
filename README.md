@@ -2,7 +2,7 @@
 
 A webpage which allows viewer to visualize sorting algorithms running in realtime.
 
-### Included Algorithms:-
+### Included Algorithms :-
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
@@ -12,5 +12,5 @@ A webpage which allows viewer to visualize sorting algorithms running in realtim
 ### Webpage Link :-
 - [nygupta/Sorting-Visualizer@github.io](https://nygupta.github.io/Sorting-Visualizer/)
 
-#### Soome Images and Videos:-
+#### Soome Images and Videos :-
 ![image](./util/sortingvisualizer.png)
